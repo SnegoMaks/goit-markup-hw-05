@@ -36,6 +36,7 @@
   --footer-logo-hover: #31d0aa;
   /*-----modal-window----*/
   --modal-win-bgr: #fcfcfc;
+  --modal-win-bgr-hover: #404bbf;
   /*---overlay----*/
   --overlay-text: #f4f4fd;
   --overlay-bgr: #4d5ae5;
@@ -549,10 +550,11 @@ button {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: var(--transition-duration-function);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--modal-win-bgr-hover);
 }
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
