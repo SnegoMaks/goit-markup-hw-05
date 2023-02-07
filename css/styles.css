@@ -210,7 +210,7 @@ button {
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
-  transition: backgroud-color var(--transition-duration-function);
+  transition: background-color var(--transition-duration-function);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -291,7 +291,7 @@ button {
   background-color: var(--social-btn-comand1);
   border-radius: 50px;
   fill: var(--social-btn-logo);
-  transition: backgroud-color var(--transition-duration-function);
+  transition: background-color var(--transition-duration-function);
 }
 .social-li:hover,
 .social-li:focus {
@@ -430,8 +430,8 @@ button {
   color: var(--text-many-button);
   cursor: pointer;
   padding: 12px 24px;
-  transition-property: color, background-color, box-shadow;
   transition: var(--transition-duration-function);
+  transition-property: color, background-color, box-shadow;
 }
 .btn:hover,
 .btn:focus {
