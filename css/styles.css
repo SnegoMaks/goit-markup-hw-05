@@ -38,6 +38,7 @@
   --modal-win-bgr: #fcfcfc;
   --modal-win-bgr-hover: #404bbf;
   --modal-x: #000000;
+  --contact-form-name: #8e8f99;
   /*---overlay----*/
   --overlay-text: #f4f4fd;
   --overlay-bgr: #4d5ae5;
@@ -578,6 +579,14 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 38px;
+}
+.contact-form-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  color: var(--contact-form-name);
 }
 .contact-form-btn {
   background-color: var(--hero-button);
