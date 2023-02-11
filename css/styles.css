@@ -37,6 +37,7 @@
   /*-----modal-window----*/
   --modal-win-bgr: #fcfcfc;
   --modal-win-bgr-hover: #404bbf;
+  --modal-x: #000000;
   /*---overlay----*/
   --overlay-text: #f4f4fd;
   --overlay-bgr: #4d5ae5;
@@ -469,6 +470,7 @@ button {
 }
 .card-link {
   display: block;
+  transition: box-shadow var(--transition-duration-function);
 }
 .card-link-img {
   position: relative;
@@ -485,7 +487,7 @@ button {
   padding: 40px 32px;
   line-height: 1.5;
   transform: translate(0, 100%);
-  transition: var(--transition-duration-function);
+  transition: transform var(--transition-duration-function);
 }
 .card-link:hover .overlay,
 .card-link:focus .overlay {
@@ -549,6 +551,7 @@ button {
   width: 24px;
   height: 24px;
   background-color: transparent;
+  color: var(--modal-x);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: color var(--transition-duration-function),
@@ -557,8 +560,9 @@ button {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--modal-win-bgr-hover);
+  color: var(--modal-win-bgr);
 }
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
-  fill: var(--hero-button-text);
+  fill: currentColor;
 }
