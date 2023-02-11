@@ -592,6 +592,14 @@ button {
 .contact-form-label {
   margin-bottom: 8px;
 }
+.contact-form {
+  position: relative;
+}
+.contact-form-icon {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
 .contact-form-btn {
   background-color: var(--hero-button);
   color: var(--hero-button-text);
