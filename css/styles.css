@@ -39,6 +39,7 @@
   --modal-win-bgr-hover: #404bbf;
   --modal-x: #000000;
   --contact-form-name: #8e8f99;
+  --contact-form-focus: #4d5ae5;
   /*---overlay----*/
   --overlay-text: #f4f4fd;
   --overlay-bgr: #4d5ae5;
@@ -579,6 +580,10 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 38px;
+}
+.contact-form-text:focus {
+  outline: none;
+  border-color: var(--contact-form-focus);
 }
 .contact-form-name {
   display: block;
