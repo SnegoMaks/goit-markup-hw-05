@@ -540,6 +540,7 @@ button {
   width: 408px;
   height: 576px;
   background-color: var(--modal-win-bgr);
+  padding: 72px 24px 24px 24px;
 }
 .modal-close-btn {
   position: absolute;
@@ -567,7 +568,17 @@ button {
   fill: currentColor;
 }
 /*------contact-form---------*/
-
+.contact-modal {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form-text {
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 38px;
+}
 .contact-form-btn {
   background-color: var(--hero-button);
   color: var(--hero-button-text);
