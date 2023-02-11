@@ -580,10 +580,14 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 38px;
+  transition: border-color var(--transition-duration-function);
 }
 .contact-form-text:focus {
   outline: none;
   border-color: var(--contact-form-focus);
+}
+.contact-form-text:focus + .contact-form-icon {
+  fill: var(--contact-form-focus);
 }
 .contact-form-name {
   display: block;
@@ -604,6 +608,11 @@ button {
   position: absolute;
   top: 8px;
   left: 16px;
+  transition: background-color var(--transition-duration-function);
+}
+.contact-form-comment {
+  resize: none;
+  width: 100%;
 }
 .contact-form-btn {
   background-color: var(--hero-button);
