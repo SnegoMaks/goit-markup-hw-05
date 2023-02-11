@@ -581,12 +581,16 @@ button {
   padding-left: 38px;
 }
 .contact-form-name {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
   color: var(--contact-form-name);
+}
+.contact-form-label {
+  margin-bottom: 8px;
 }
 .contact-form-btn {
   background-color: var(--hero-button);
