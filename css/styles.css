@@ -419,6 +419,51 @@ button {
   display: flex;
   gap: 16px;
 }
+.footer-mail-wind {
+  display: flex;
+}
+.footer-mail-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-soc-text);
+  margin-bottom: 16px;
+}
+.footer-mail {
+  margin-left: 80px;
+}
+.footer-mail-wind-on {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 24px;
+}
+.footer-mail-wind-on:focus {
+  border-color: var(--contact-form-befor);
+}
+.footer-mail-btn {
+  background-color: var(--hero-button);
+  color: var(--hero-button-text);
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 8px 24px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color var(--transition-duration-function);
+}
+.footer-mail-btn:hover,
+.footer-mail-btn:focus {
+  background-color: var(--link);
+}
 /*-------portfolio------*/
 /*---------section- btn--------*/
 .many-buttons {
