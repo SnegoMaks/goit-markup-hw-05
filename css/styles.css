@@ -41,6 +41,7 @@
   --contact-form-name: #8e8f99;
   --contact-form-focus: #4d5ae5;
   --contact-form-p: #2e2f42;
+  --contact-form-befor: #404bbf;
   /*---overlay----*/
   --overlay-text: #f4f4fd;
   --overlay-bgr: #4d5ae5;
@@ -626,6 +627,7 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 8px 16px;
+  margin-bottom: 18px;
   transition: border-color var(--transition-duration-function);
 }
 .contact-form-comment::placeholder {
@@ -649,7 +651,28 @@ button {
   height: 16px;
 }
 .contact-form-check-x:checked + .contact-form-check::before {
-  background-color: #31d0aa;
+  background-color: var(--contact-form-befor);
+  background-image: url(../images/icons/contact-check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: border-color var(--transition-duration-function) background-color
+    var(--transition-duration-function);
+}
+.contact-form-check-x:focus + .contact-form-check::before {
+  border-color: var(--contact-form-befor);
+}
+.contact-form-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 22px;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  color: #757575;
 }
 .contact-form-btn {
   background-color: var(--hero-button);
